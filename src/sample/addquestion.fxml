@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.geometry.Insets?>
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.AddQuestionController">
+
+    <top>
+        <ImageView fitWidth="150" fitHeight="150" BorderPane.alignment="CENTER">
+            <Image url="@GLA_University_logo.png"/>
+        </ImageView>
+    </top>
+    <center>
+        <VBox>
+            <HBox spacing="25">
+                <padding>
+                    <Insets top="50" left="50"/>
+                </padding>
+                <Label text="Enter Question: "/>
+                <TextField  minWidth="250" fx:id="question"/>
+            </HBox>
+        </VBox>
+
+    </center>
+
+</BorderPane>

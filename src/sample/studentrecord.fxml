@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.StudentRecordController">
+    <top>
+        <ImageView fitWidth="150" fitHeight="150" BorderPane.alignment="CENTER">
+            <Image url="@GLA_University_logo.png"/>
+        </ImageView>
+    </top>
+
+    <center>
+        <VBox>
+            <padding>
+                <Insets top="10"/>
+            </padding>
+            <TableView fx:id="studentTable">
+                <columnResizePolicy>
+                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+                </columnResizePolicy>
+                <columns>
+                    <TableColumn text="University Roll Number">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="universityRollNumber"/>
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn text="Class Roll Number">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="classRollNumber"/>
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn text="Name">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="name"/>
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn text="Current Year">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="currentYear"/>
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn text="Section">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="section"/>
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn text="Class Roll Number">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="classRollNumber"/>
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn text="Course">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="course"/>
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn text="Username">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="userName"/>
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn text="Password">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="password"/>
+                        </cellValueFactory>
+                    </TableColumn>
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+
+</BorderPane>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.InstructionsController"
+            fx:id="instructionBorderPane">
+
+    <top>
+        <ImageView fitWidth="150" fitHeight="150" BorderPane.alignment="CENTER">
+            <Image url="@GLA_University_logo.png"/>
+        </ImageView>
+    </top>
+
+    <center>
+        <VBox>
+            <padding>
+                <Insets top="50" left="50"/>
+            </padding>
+            <HBox spacing="15">
+                <padding>
+                    <Insets top="10"/>
+                </padding>
+                <Button text="1" fx:id="optionOne" onAction="#startExam"/>
+                <Label text="Start online exam."/>
+            </HBox>
+            <HBox spacing="15">
+                <padding>
+                    <Insets top="10"/>
+                </padding>
+                <Button text="2" fx:id="optionTwo" onAction="#addQuestion"/>
+                <Label text="Add question to question bank for exam."/>
+            </HBox>
+            <HBox spacing="15">
+                <padding>
+                    <Insets top="10"/>
+                </padding>
+                <Button text="3" fx:id="optionThree" onAction="#addVivaQuestion"/>
+                <Label text="Add viva questions."/>
+            </HBox>
+            <HBox spacing="15">
+                <padding>
+                    <Insets top="10"/>
+                </padding>
+                <Button text="4" fx:id="optionFour" onAction="#showStudentRecord"/>
+                <Label text="Show students record"/>
+            </HBox>
+            <HBox spacing="15">
+                <padding>
+                    <Insets top="10"/>
+                </padding>
+                <Button text="5" fx:id="optionFive" onAction="#showAllQuestions"/>
+                <Label text="Show all questions from question bank"/>
+            </HBox>
+            <HBox spacing="15">
+                <padding>
+                    <Insets top="10"/>
+                </padding>
+                <Button text="6" fx:id="optionSix" onAction="#showVivaQuestions"/>
+                <Label text="Show all viva questions."/>
+            </HBox>
+            <HBox spacing="15">
+                <padding>
+                    <Insets top="10"/>
+                </padding>
+                <Button text="7" fx:id="optionSeven" onAction="#endExam"/>
+                <Label text="End exam."/>
+            </HBox>
+        </VBox>
+    </center>
+
+</BorderPane>

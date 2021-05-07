@@ -1,0 +1,43 @@
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.geometry.Insets?>
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.QuestionController">
+
+    <top>
+        <ImageView fitWidth="150" fitHeight="150" BorderPane.alignment="CENTER">
+            <Image url="@GLA_University_logo.png"/>
+        </ImageView>
+    </top>
+
+    <center>
+        <VBox>
+            <padding>
+                <Insets top="10"/>
+            </padding>
+            <TableView fx:id="questionTable">
+                <columnResizePolicy>
+                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+                </columnResizePolicy>
+                <columns>
+                    <TableColumn text="S.No.">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="serialNumber"/>
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn text="Question">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="question"/>
+                        </cellValueFactory>
+                    </TableColumn>
+                </columns>
+            </TableView>
+        </VBox>
+
+    </center>
+</BorderPane>
