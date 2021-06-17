@@ -9,6 +9,6 @@ This is the GUI based application for faculty to conduct online exam.
 6. Display All Viva Questions
 7. End Exam
 # Links
-Since, this project requires another project to be fully functionable, link for software used student :
+Since, this project requires another project to be fully functionable, link for software used by student:
 https://github.com/namam2807/OnlineExamStudentPortalJavaFX
 
